@@ -147,11 +147,13 @@ int main(int argc, char * const argv[])
 
     print_future_status(future);
 
-    run_console(L"console");
+    //run_console(L"console");
     /*std::thread console_thread_0(run_console, L"console 0");
     std::thread console_thread_1(run_console, L"console 1");*/
 
     //future = std::async(simplefunc, "hello world");
+
+    cout << format_string("hello %30s", "world") << endl;
 
     print_future_status(future);
 
